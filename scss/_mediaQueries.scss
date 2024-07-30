@@ -1,0 +1,161 @@
+@media screen and (min-width :280px) and (max-width: 1080px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    h3 {
+        font-size: 1.25rem !important;
+    }
+
+    p {
+        font-size: 1rem !important;
+    }
+
+    .defaultMargin {
+        margin: 0 10vw !important;
+
+    }
+
+    .navbar {
+        .brand_container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            width: 100%;
+
+            .toggle {
+                display: block;
+            }
+        }
+
+        .links {
+            display: none;
+        }
+    }
+
+    .hero {
+        margin: 0 10vh;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        gap: 2rem;
+
+        .content {
+            align-items: center;
+
+            .title {
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        .image {
+            position: initial;
+
+            img {
+                position: initial;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .about {
+        margin: 0 10vw;
+
+        img {
+            width: 100% !important;
+        }
+    }
+
+    .portfolio {
+        .container {
+            grid-template-columns: 1fr !important;
+
+            .portfolio_container {
+                padding: 0.75rem !important;
+
+                .image {
+                    width: 200px;
+
+                    img {
+                        &:hover {
+                            top: -40% !important;
+                        }
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    .image {
+                        img {
+                            &:hover {
+                                top: -246%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .skills {
+
+        .title_container{
+            p{
+                margin: 0 10vw;
+            }
+        }
+
+        .content {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .language {
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .contact {
+        flex-direction: column;
+        margin: 2rem 10vw;
+        gap: 5vw;
+
+        .left {
+            .form {
+                input {
+                    padding-right: 10vw;
+                }
+            }
+        }
+
+        .right {
+            img {
+                width: 100%;
+                object-fit: contain;
+                margin: 0px;
+            }
+        }
+    }
+
+    footer {
+        padding: 5vw 10vw;
+        grid-template-columns: 1fr;
+        gap: 10vw;
+      }
+      .lower__footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 5vw;
+        gap: 1rem;
+      }
+}

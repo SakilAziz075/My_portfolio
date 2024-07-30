@@ -1,0 +1,30 @@
+.languages {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+        padding: 1rem;
+        margin: 5%;
+       //margin-right: -4%;
+
+        .language {
+            flex: 0 1 10rem; // Ensures each image takes a fixed size
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 9rem;
+                width: auto;
+                object-fit: contain; // Ensure the images are fully visible within the given size
+                filter: brightness(0) invert(1);
+                transition: 0.5s ease-in-out;
+
+                &:hover {
+                    filter: none;
+                }
+            }
+        }
+    }
+}

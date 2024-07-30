@@ -1,0 +1,39 @@
+@import 'mixins';
+
+.hero {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+    height: 60vh;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem;
+
+        .title {
+            h1 {
+               @include gradientText;
+              font-size: 6vw;
+            }
+            h2 {
+                @include gradientText;
+               font-size: 2vw;
+             }
+        }
+    }
+
+    .image {
+        position: relative;
+
+        img {
+            position: absolute;
+            bottom: 0;
+            height: 75vh;
+            width: 45vw;
+            object-fit:contain;
+        }
+    }
+}
